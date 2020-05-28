@@ -11,7 +11,7 @@
   tasks:
    - name: create a disk
      gcp_compute_disk:
-         name: 'disk-instance'
+         name: '"{{ vm_name }}"-disk'
          size_gb: 20
          source_image: 'projects/centos-cloud/global/images/centos-8-v20200521'
          zone: "{{ zone }}"
